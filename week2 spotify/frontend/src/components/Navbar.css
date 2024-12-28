@@ -1,0 +1,116 @@
+/* Navbar Styling */
+.navbar-custom {
+    background-color: #121212; /* Dark background to blend with homepage */
+    border-bottom: 2px solid #1db954; /* Green bottom border for style */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Soft shadow under navbar */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .navbar-custom:hover {
+    background-color: #1a1a1a; /* Slightly lighter background on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Darker shadow on hover */
+  }
+  
+  .navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1db954;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-brand .bi {
+    font-size: 32px;
+  }
+  
+  .navbar-brand:hover {
+    color: #1aa34a; /* Slightly darker green */
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #1db954; /* Green color for the hamburger menu */
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-toggler-icon:hover {
+    background-color: #1aa34a; /* Darker green on hover */
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none; /* No outline on focus */
+  }
+  
+  .navbar-collapse {
+    justify-content: center;
+  }
+  
+  .d-flex {
+    width: 80%; /* Center-align the search bar and button */
+    max-width: 650px;
+    position: relative;
+  }
+  
+  .form-control {
+    background-color: #444; /* Dark background for input */
+    border: none;
+    color: white;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+  }
+  
+  .form-control:focus {
+    background-color: #555; /* Slightly lighter background on focus */
+    border: none;
+    box-shadow: 0 0 10px #1db954; /* Green glow effect on focus */
+  }
+  
+  .btn-outline-success {
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 16px;
+    margin-left: 15px;
+    border: 2px solid #1db954;
+    color: #1db954;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow for button */
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #1db954;
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+  }
+  
+  .btn-outline-success:focus {
+    outline: none;
+    box-shadow: 0 0 10px #1db954; /* Focus glow effect */
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-custom {
+      padding: 10px;
+    }
+  
+    .d-flex {
+      width: 90%;
+    }
+  
+    .form-control {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  
+    .btn-outline-success {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  
